@@ -45,7 +45,8 @@ Airflow can handle failures in tasks by retrying them a couple of times (optiona
 
 If retries don't help, Airflow will record the task as being failed, optionally notifying you about the failure. 
 
-
+## Reasons to use Airflow 
+Open Source (Not locked into one Vendor)
 
 
 
