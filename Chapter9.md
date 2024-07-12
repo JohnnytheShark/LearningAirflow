@@ -25,3 +25,17 @@ pip install pytest
 Create a tests/ folder at the root of the project that holds all the tests and mirrors the same directory structure as in the rest of the project.
 
 test_ prefix is required.
+
+Tests are read from top to bottom
+Top shows you which tests failed. Bottom shows you why the test failed
+
+## CI/CD Pipeline 
+CI/CD pipeline is a system that runs predefined scripts when you make a change to your code repository. The continuous integration (CI) denotes checking and validating the changed code to ensure it complies with coding standards and a test suite. For example, upon pushing code, you could check for Flake8, Pylint, and Black and run a series of tests. The CD indicates automatically deploying the code into production systems, completely automated and without human interference. 
+
+The goal is to maximize coding productivity without having to deal with manually validating and deploying it.
+
+Most CI/CD systems start off with a YAML configuration file in which a pipeline is defined: a series of steps to execute upon changing code. Each step should complete successfully to make the pipeline successful. 
+
+We can enforce rules such as "only merge to master with a successful pipeline" 
+
+
